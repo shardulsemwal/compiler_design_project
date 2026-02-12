@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Compiler Design Toolkit</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>🔥 Compiler Design Toolkit</h1>
+
+    <form method="POST">
+
+        <textarea name="code" placeholder="Enter your code here...">{{ code }}</textarea>
+
+        <div class="buttons">
+            <button name="action" value="token">Lexical</button>
+            <button name="action" value="syntax">Syntax</button>
+            <button name="action" value="opt">Optimize</button>
+            <button name="action" value="dead">Dead Code</button>
+            <button name="action" value="undefined">Undefined Var</button>
+            <button name="action" value="symbol">Symbol Table</button>
+            <button name="action" value="redundant">Redundant</button>
+            <button name="action" value="divide">Division Check</button>
+            <button name="action" value="compile">Compile & Run</button>
+        </div>
+
+    </form>
+
+    <div class="output">
+        <h2>Output</h2>
+        <pre>{{ output }}</pre>
+    </div>
+
+</div>
+
+</body>
+</html>
+
